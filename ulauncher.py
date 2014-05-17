@@ -145,7 +145,7 @@ class Gui:
             exe=True            
         else:
             exe=False
-        if len(self.app_icon_path)>0:
+        if len(self.app_icon_path)==0:
             self.app_icon_path= self.initial_directory + "/default-icon.png"
         if name and exe:
             return True
